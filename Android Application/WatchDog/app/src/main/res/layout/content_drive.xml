@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_drive"
+        tools:context=".DriveActivity">
+    <WebView android:layout_width="match_parent" android:layout_height="match_parent"
+             android:id="@+id/live_web_view_drive_act"></WebView>
+    <ProgressBar
+            android:id="@+id/progress_drive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content"
+                                                       android:layout_height="wrap_content"
+                                                       app:layout_constraintStart_toStartOf="parent"
+                                                       app:layout_constraintEnd_toEndOf="parent"
+                                                       app:layout_constraintTop_toTopOf="parent"
+                                                       app:layout_constraintBottom_toBottomOf="parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_width="wrap_content"
+                                                                               android:layout_height="wrap_content"
+                                                                               app:layout_constraintStart_toStartOf="parent"
+                                                                               app:layout_constraintEnd_toEndOf="parent"
+                                                                               app:layout_constraintTop_toTopOf="parent"
+                                                                               android:id="@+id/drive_fwd"
+                                                                               android:src="@drawable/twotone_keyboard_arrow_up_black_48"
+                                                                               app:rippleColor="@color/colorPrimaryDark"
+        />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_width="wrap_content"
+                                                                               android:layout_height="wrap_content"
+                                                                               app:layout_constraintEnd_toStartOf="@id/drive_fwd"
+                                                                               app:layout_constraintBottom_toBottomOf="parent"
+                                                                               app:layout_constraintTop_toTopOf="parent"
+                                                                               android:id="@+id/drive_left"
+                                                                               app:rippleColor="@color/colorPrimaryDark"
+                                                                               android:src="@drawable/twotone_keyboard_arrow_left_black_48"
+        />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_width="wrap_content"
+                                                                               android:layout_height="wrap_content"
+                                                                               app:rippleColor="@color/colorPrimaryDark"
+                                                                               app:layout_constraintStart_toEndOf="@id/drive_fwd"
+                                                                               app:layout_constraintBottom_toBottomOf="parent"
+                                                                               app:layout_constraintTop_toTopOf="parent"
+                                                                               android:id="@+id/drive_right"
+                                                                               android:src="@drawable/twotone_keyboard_arrow_right_black_48"
+        />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_width="wrap_content"
+                                                                               android:layout_height="wrap_content"
+                                                                               app:layout_constraintStart_toStartOf="parent"
+                                                                               app:layout_constraintEnd_toEndOf="parent"
+                                                                               app:layout_constraintTop_toBottomOf="@id/drive_right"
+                                                                               android:id="@+id/drive_back"
+                                                                               app:rippleColor="@color/colorPrimaryDark"
+                                                                               android:src="@drawable/twotone_keyboard_arrow_down_black_48"
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
