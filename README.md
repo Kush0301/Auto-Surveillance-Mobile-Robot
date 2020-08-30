@@ -1,4 +1,4 @@
-# EVIL WATCHDOG
+# Auto Surveillance Mobile Robot
 ## Objective
 The project was aimed to build a robot that is capable of patrolling homes, detecting intruders, and pushing notifications to the user’s phones, along with a picture of the intruder. The user can choose to see a live feed from the bot’s perspective, and drive the bot to manually. This could, potentially, replace an array of CCTV cameras, and function as a portable security system, that can be deployed wherever it is required.
 
