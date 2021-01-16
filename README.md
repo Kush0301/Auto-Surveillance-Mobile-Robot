@@ -7,3 +7,8 @@ A RaspberryPi Zero W, that is connected to the home’s wifi powers the bot, as 
 
 ## Future Scope
 Further, the robot can be made capable of mapping areas, and communicating with another bot of the same type, to cover even larger spaces. This wll require knowledge in the domains of Mobile Robotics, and Swarm Communication.
+
+For video demonstration [click here](https://youtu.be/PWTPQx9G8Ao)
+To visit the website [click here](https://www.ivlabs.in/auto-surveillance-mobile-robot.html)
+
+![](https://www.ivlabs.in/uploads/1/3/0/6/130645069/published/847835386_13.jpg)
